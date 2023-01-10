@@ -46,11 +46,8 @@ void PrintArray(string[] array)
 
 void PrintResult(string[] array)
 {
-
     string[] shortArray = GetArray(array);
-
     PrintArray(shortArray);
-
 }
 
 Console.WriteLine("Массивы:");
