@@ -31,3 +31,34 @@ string[] GetArray(string[] array)
     Array.Resize(ref result, count);
     return result;
 }
+void PrintArray(string[] array)
+{
+    if (array.Length == 0)
+    {
+        Console.WriteLine("Нету значений");
+    }
+    else
+    {
+        Array.ForEach(array, (str) => Console.Write($"{str} "));
+        Console.WriteLine();
+    }
+}
+
+void PrintResult(string[] array)
+{
+
+    string[] shortArray = GetArray(array);
+
+    PrintArray(shortArray);
+
+}
+
+Console.WriteLine("Массивы:");
+PrintArray(array1);
+PrintArray(array2);
+PrintArray(array3);
+Console.WriteLine();
+Console.WriteLine($"Новые массивы ");
+PrintResult(array1);
+PrintResult(array2);
+PrintResult(array3);
